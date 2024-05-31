@@ -12,7 +12,7 @@ def task_conditions():
         result = 'yes'
     else:
         result = 'no'
-    question = str(num)
+    question = num
     return (question, result)
 
 

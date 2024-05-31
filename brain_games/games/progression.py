@@ -20,7 +20,7 @@ def task_conditions():
     num_question = random.randint(0, len(num_list) - 1)
     result = num_list[num_question]
     num_list[num_question] = '..'
-    question = f"Question: {' '.join(num_list)}"
+    question = f"{' '.join(num_list)}"
     return (question, result)
 
 
