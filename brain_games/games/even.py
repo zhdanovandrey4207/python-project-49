@@ -12,7 +12,8 @@ def task_conditions():
         result = 'yes'
     else:
         result = 'no'
-    return (num, result)
+    question = str(num)
+    return (question, result)
 
 
 # запуск двигателя игры с атрибутами из task_conditions и базовым вопросом

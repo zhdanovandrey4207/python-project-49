@@ -15,7 +15,7 @@ def task_conditions():
         if num % i == 0:
             result = 'no'
             break
-    question = f"Question: {str(num)}"
+    question = str(num)
     return (question, result)
 
 
