@@ -1,21 +1,25 @@
 import random
-from brain_games.engine.start import start_game
-# импорт двигателя игры
-
-basic_question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-# получаем рандомное число и правильный ответ о его четности
-def task_conditions():
-    num = random.randint(1, 100)
-    if num % 2 == 0:
+BASIC_QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 100
+
+
+# find out if number is even
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+
+
+# get random number and find out if it's even
+def get_task_conditions():
+    num = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
+    if is_even(num):
         result = 'yes'
     else:
         result = 'no'
     question = num
     return (question, result)
-
-
-# запуск двигателя игры с атрибутами из task_conditions и базовым вопросом
-def even_game():
-    start_game(basic_question, task_conditions)

@@ -1,14 +1,14 @@
 import random
-from brain_games.engine.start import start_game
-# импорт двигателя игры
 
-basic_question = "What is the result of the expression?"
+BASIC_QUESTION = "What is the result of the expression?"
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 100
 
 
-# получаем рандомное выражение и его правильный результат
-def task_conditions():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
+# get arithmetic expression with random numbers
+def get_task_conditions():
+    num1 = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
+    num2 = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     operators = ['+', '-', '*']
     operator = random.choice(operators)
     question = f"{num1} {operator} {num2}"
@@ -16,11 +16,6 @@ def task_conditions():
         result = num1 + num2
     elif operator == '-':
         result = num1 - num2
-    else:
+    elif operator == '*':
         result = num1 * num2
     return (question, result)
-
-
-# запуск двигателя игры с атрибутами из task_conditions и базовым вопросом
-def calc_game():
-    start_game(basic_question, task_conditions)

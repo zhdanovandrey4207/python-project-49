@@ -1,11 +1,11 @@
 #!/usr/bin/env pyhton3
-
-
-from brain_games.games.calc import calc_game
+from brain_games.games.calc import BASIC_QUESTION, get_task_conditions
+from brain_games.engine.start import start_game
 
 
 def main():
-    calc_game()
+    get_task_conditions()
+    start_game(BASIC_QUESTION, get_task_conditions)
 
 
 if __name__ == "__main__":
