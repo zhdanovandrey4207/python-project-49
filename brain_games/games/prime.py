@@ -11,10 +11,9 @@ def is_prime(num):
     square_root = round(math.sqrt(num))
     for i in range(2, square_root + 1):
         if num % i == 0:
-            break
             return False
-        else:
-            return True
+            break
+    return True
 
 
 # get random number and find out if it's prime
