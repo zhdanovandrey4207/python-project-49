@@ -1,12 +1,11 @@
 #!/usr/bin/env pyhton3
-from brain_games.games.even import BASIC_QUESTION, get_task_conditions
-from brain_games.engine.start import start_game
+import brain_games.games.even as even_game
+from brain_games.engine.game_engine import run_game
 
 
 def main():
-    get_task_conditions()
-    start_game(BASIC_QUESTION, get_task_conditions)
+    run_game(even_game)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

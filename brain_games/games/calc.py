@@ -1,6 +1,6 @@
 import random
 
-BASIC_QUESTION = "What is the result of the expression?"
+BASIC_QUESTION = 'What is the result of the expression?'
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 
@@ -11,11 +11,11 @@ def get_task_conditions():
     num2 = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     operators = ['+', '-', '*']
     operator = random.choice(operators)
-    question = f"{num1} {operator} {num2}"
+    question = f'{num1} {operator} {num2}'
     if operator == '+':
-        result = num1 + num2
+        result = str(num1 + num2)
     elif operator == '-':
-        result = num1 - num2
+        result = str(num1 - num2)
     elif operator == '*':
-        result = num1 * num2
+        result = str(num1 * num2)
     return (question, result)

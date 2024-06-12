@@ -21,7 +21,7 @@ def get_task_conditions():
         num_list.append(str(n))
     # get position of "secret" number
     num_question = random.randint(0, len(num_list) - 1)
-    result = num_list[num_question]
+    result = str(num_list[num_question])
     num_list[num_question] = '..'
     # get sequence as sting
     question = f"{' '.join(num_list)}"
