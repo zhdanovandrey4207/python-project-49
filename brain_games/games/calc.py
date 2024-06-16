@@ -1,6 +1,6 @@
 import random
 
-BASIC_QUESTION = 'What is the result of the expression?'
+QUESTION = 'What is the result of the expression?'
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 

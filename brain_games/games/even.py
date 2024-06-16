@@ -1,7 +1,7 @@
 import random
 
 
-BASIC_QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 

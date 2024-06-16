@@ -1,6 +1,6 @@
 import random
 
-BASIC_QUESTION = "What number is missing in the progression?"
+QUESTION = "What number is missing in the progression?"
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 MIN_DIFFERENCE = 1

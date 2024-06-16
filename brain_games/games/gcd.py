@@ -1,7 +1,7 @@
 import random
 import math
 
-BASIC_QUESTION = 'Find the greatest common divisor of given numbers.'
+QUESTION = 'Find the greatest common divisor of given numbers.'
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 
