@@ -21,4 +21,4 @@ def run_game(game):
                   f'Correct answer was \'{result}\'.\n'
                   f'Let\'s try again, {name}!')
             return run_game(game)
-    'Congratulations, {name}!'
+    print('Congratulations, {name}!')
