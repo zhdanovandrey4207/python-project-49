@@ -9,8 +9,8 @@ MIN_SEQUENCE_LEN = 5
 MAX_SEQUENCE_LEN = 10
 
 
-# get sequence of numbers and value of missing number
 def get_task_conditions():
+    '''Get sequence of numbers and value of missing number'''
     start_num = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     step = random.randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
     num_count = random.randint(MIN_SEQUENCE_LEN, MAX_SEQUENCE_LEN)
@@ -24,5 +24,5 @@ def get_task_conditions():
     result = str(num_list[num_question])
     num_list[num_question] = '..'
     # get sequence as sting
-    question = f"{' '.join(num_list)}"
+    question = ' '.join(num_list)
     return (question, result)

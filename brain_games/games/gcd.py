@@ -6,8 +6,8 @@ MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 
 
-# get 2 numbers and their greatest common divider
 def get_task_conditions():
+    '''Get 2 numbers and their greatest common divider'''
     num1 = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     num2 = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     question = f'{num1} {num2}'

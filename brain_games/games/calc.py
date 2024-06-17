@@ -5,8 +5,8 @@ MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 
 
-# get arithmetic expression with random numbers
 def get_task_conditions():
+    '''Get arithmetic expression with random numbers'''
     num1 = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     num2 = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     operators = ['+', '-', '*']

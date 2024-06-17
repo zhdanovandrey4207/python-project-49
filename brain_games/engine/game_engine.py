@@ -2,8 +2,8 @@ import prompt
 ROUNDS_COUNT = 3
 
 
-# greeting and introduction
 def run_game(game):
+    '''Greet and get know.'''
     name = prompt.string('Welcome to the Brain Games!\n'
                          'May I have your name? ')
     print(f'Hello, {name}!')

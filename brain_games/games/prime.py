@@ -6,8 +6,8 @@ MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 
 
-# find out if number is prime
 def is_prime(num):
+    '''Find out if number is prime'''
     square_root = round(math.sqrt(num))
     for i in range(2, square_root + 1):
         if num % i == 0:
@@ -15,8 +15,8 @@ def is_prime(num):
     return True
 
 
-# get random number and find out if it's prime
 def get_task_conditions():
+    '''Get random number and find out if it's prime'''
     num = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     question = num
     if is_prime(num):
