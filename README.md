@@ -14,7 +14,7 @@
 [![asciicast](https://asciinema.org/a/amMGEKlyxM14oMwPSTuSXVJgq.svg)](https://asciinema.org/a/amMGEKlyxM14oMwPSTuSXVJgq)
 
 # clone, build and install package using following commands:
-git clone git@github.com:zhdanovandrey4207/python-project-49.git
-make install
-make build
-make package-install
+- git clone git@github.com:zhdanovandrey4207/python-project-49.git
+- make install
+- make build
+- make package-install

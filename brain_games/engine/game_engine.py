@@ -21,4 +21,5 @@ def run_game(game):
                   f'Correct answer was \'{result}\'.\n'
                   f'Let\'s try again, {name}!')
             break
-    print(f'Congratulations, {name}!')
+    if answer == result:
+        print(f'Congratulations, {name}!')
